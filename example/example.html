@@ -8,8 +8,10 @@
   <script type="text/javascript" src="tinymce.min.js"></script>
 
   <script type="text/javascript">
+    tinymce.PluginManager.load('equationeditor', '/build/js/plugin.min.js');
+
     tinymce.init({
-      selector:'textarea',
+      selector: 'textarea',
       plugins: 'equationeditor',
       content_css: '../build/mathquill.css',
       toolbar: [
