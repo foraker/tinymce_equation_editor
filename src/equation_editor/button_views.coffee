@@ -3,8 +3,8 @@ EquationEditor.Buttons = {}
 class EquationEditor.Buttons.BaseButtonView extends EquationEditor.View
   initialize: ->
     @latex      = @options.latex
-    @buttonText = @options.buttonText
-    @className  = @options.className || 'math-button'
+    @buttonText = @options.buttonText || @options.latex
+    @className  = ['math-button', @options.className].join(' ').trim()
 
   handleClick: (e) =>
     e.preventDefault()
@@ -24,11 +24,6 @@ class EquationEditor.Buttons.BaseButtonView extends EquationEditor.View
 
 class EquationEditor.Buttons.CommandButtonView extends EquationEditor.Buttons.BaseButtonView
   event: 'command'
-
-class EquationEditor.Buttons.CharacterButtonView extends EquationEditor.Buttons.CommandButtonView
-  initialize: ->
-    @latex      = @options.character
-    @buttonText = @options.character
 
 class EquationEditor.Buttons.WriteButtonView extends EquationEditor.Buttons.BaseButtonView
   event: 'write'

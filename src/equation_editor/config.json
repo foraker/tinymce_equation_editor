@@ -2,23 +2,19 @@
   "buttonBar": [
     {
       "klass": "EquationEditor.Buttons.WriteButtonView",
-      "latex": "+",
-      "buttonText": "+"
+      "latex": "+"
     },
     {
       "klass": "EquationEditor.Buttons.WriteButtonView",
-      "latex": "-",
-      "buttonText": "-"
+      "latex": "-"
     },
     {
       "klass": "EquationEditor.Buttons.WriteButtonView",
-      "latex": "\\times",
-      "buttonText": "\\times"
+      "latex": "\\times"
     },
     {
       "klass": "EquationEditor.Buttons.WriteButtonView",
-      "latex": "\\div",
-      "buttonText": "\\div"
+      "latex": "\\div"
     },
     {
       "klass": "EquationEditor.Buttons.CommandButtonView",
@@ -29,23 +25,21 @@
       "klass": "EquationEditor.Buttons.CommandButtonView",
       "latex": "^",
       "buttonText": "y^x",
-      "className": "math-button tall"
+      "className": "tall"
     },
     {
       "klass": "EquationEditor.Buttons.CommandButtonView",
       "latex": "\\sqrt",
       "buttonText": "\\sqrt{x}",
-      "className": "math-button sqrt-button"
+      "className": "sqrt-button"
     },
     {
       "klass": "EquationEditor.Buttons.WriteButtonView",
-      "latex": "=",
-      "buttonText": "="
+      "latex": "="
     },
     {
       "klass": "EquationEditor.Buttons.WriteButtonView",
-      "latex": "\\approx",
-      "buttonText": "\\approx"
+      "latex": "\\approx"
     }
   ],
   "buttonGroups": {
@@ -55,83 +49,67 @@
         "buttonViews": [
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
-            "latex": "0",
-            "buttonText": "0"
+            "latex": "0"
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
-            "latex": "1",
-            "buttonText": "1"
+            "latex": "1"
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
-            "latex": "2",
-            "buttonText": "2"
+            "latex": "2"
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
-            "latex": "3",
-            "buttonText": "3"
+            "latex": "3"
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
-            "latex": "4",
-            "buttonText": "4"
+            "latex": "4"
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
-            "latex": "5",
-            "buttonText": "5"
+            "latex": "5"
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
-            "latex": "6",
-            "buttonText": "6"
+            "latex": "6"
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
-            "latex": "7",
-            "buttonText": "7"
+            "latex": "7"
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
-            "latex": "8",
-            "buttonText": "8"
+            "latex": "8"
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
-            "latex": "9",
-            "buttonText": "9"
+            "latex": "9"
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
-            "latex": ",",
-            "buttonText": ","
+            "latex": ","
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
-            "latex": ".",
-            "buttonText": "."
+            "latex": "."
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
-            "latex": "\\pi",
-            "buttonText": "\\pi"
+            "latex": "\\pi"
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
-            "latex": "i",
-            "buttonText": "i"
+            "latex": "i"
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
-            "latex": "e",
-            "buttonText": "e"
+            "latex": "e"
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
-            "latex": "\\infty",
-            "buttonText": "\\infty"
+            "latex": "\\infty"
           }
         ]
       },
@@ -140,28 +118,23 @@
         "buttonViews": [
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
-            "latex": "+",
-            "buttonText": "+"
+            "latex": "+"
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
-            "latex": "-",
-            "buttonText": "-"
+            "latex": "-"
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
-            "latex": "\\times",
-            "buttonText": "\\times"
+            "latex": "\\times"
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
-            "latex": "\\div",
-            "buttonText": "\\div"
+            "latex": "\\div"
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
-            "latex": "\\pm",
-            "buttonText": "\\pm"
+            "latex": "\\pm"
           },
           {
             "klass": "EquationEditor.Buttons.CommandButtonView",
@@ -170,28 +143,23 @@
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
-            "latex": "\\cdot",
-            "buttonText": "\\cdot"
+            "latex": "\\cdot"
           },
           {
             "klass": "EquationEditor.Buttons.CommandButtonView",
-            "latex": "/",
-            "buttonText": "/"
+            "latex": "/"
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
-            "latex": "$",
-            "buttonText": "$"
+            "latex": "$"
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
-            "latex": "\\degree",
-            "buttonText": "\\degree"
+            "latex": "\\degree"
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
-            "latex": "%",
-            "buttonText": "%"
+            "latex": "%"
           }
         ]
       }
@@ -204,46 +172,42 @@
             "klass": "EquationEditor.Buttons.CommandButtonView",
             "latex": "^",
             "buttonText": "y^x",
-            "className": "math-button tall"
+            "className": "tall"
           },
           {
             "klass": "EquationEditor.Buttons.CommandButtonView",
             "latex": "\\sqrt",
             "buttonText": "\\sqrt{x}",
-            "className": "math-button sqrt-button"
+            "className": "sqrt-button"
           },
           {
             "klass": "EquationEditor.Buttons.CommandButtonView",
             "latex": "\\thirdroot",
             "buttonText": "\\nthroot[3]{x}",
-            "className": "math-button sqrt-button tall"
+            "className": "sqrt-button tall"
           },
           {
             "klass": "EquationEditor.Buttons.CommandButtonView",
             "latex": "\\nthroot",
             "buttonText": "\\nthroot[n]{x}",
-            "className": "math-button sqrt-button tall"
+            "className": "sqrt-button tall"
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
             "latex": "e^x",
-            "buttonText": "e^x",
-            "className": "math-button tall"
+            "className": "tall"
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
-            "latex": "\\ln",
-            "buttonText": "\\ln"
+            "latex": "\\ln"
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
-            "latex": "\\log",
-            "buttonText": "\\log"
+            "latex": "\\log"
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
-            "latex": "\\log_b",
-            "buttonText": "\\log_b"
+            "latex": "\\log_b"
           }
         ]
       },
@@ -252,68 +216,55 @@
         "buttonViews": [
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
-            "latex": "=",
-            "buttonText": "="
+            "latex": "="
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
-            "latex": "\\neq",
-            "buttonText": "\\neq"
+            "latex": "\\neq"
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
-            "latex": "\\sim",
-            "buttonText": "\\sim"
+            "latex": "\\sim"
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
-            "latex": "\\not\\sim",
-            "buttonText": "\\not\\sim"
+            "latex": "\\not\\sim"
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
-            "latex": "\\lt",
-            "buttonText": "\\lt"
+            "latex": "\\lt"
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
-            "latex": "\\gt",
-            "buttonText": "\\gt"
+            "latex": "\\gt"
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
-            "latex": "\\approx",
-            "buttonText": "\\approx"
+            "latex": "\\approx"
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
-            "latex": "\\not\\approx",
-            "buttonText": "\\not\\approx"
+            "latex": "\\not\\approx"
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
-            "latex": "\\le",
-            "buttonText": "\\le"
+            "latex": "\\le"
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
-            "latex": "\\ge",
-            "buttonText": "\\ge"
+            "latex": "\\ge"
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
-            "latex": "\\simeq",
-            "buttonText": "\\simeq"
+            "latex": "\\simeq"
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
-            "latex": "\\not\\simeq",
-            "buttonText": "\\not\\simeq"
+            "latex": "\\not\\simeq"
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
-            "latex": "\\therefore",
-            "buttonText": "\\therefore"
+            "latex": "\\therefore"
           }
         ]
       },
@@ -322,13 +273,11 @@
         "buttonViews": [
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
-            "latex": "\\rightarrow",
-            "buttonText": "\\rightarrow"
+            "latex": "\\rightarrow"
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
-            "latex": "\\leftrightarrow",
-            "buttonText": "\\leftrightarrow"
+            "latex": "\\leftrightarrow"
           },
           {
             "klass": "EquationEditor.Buttons.CommandButtonView",
@@ -342,38 +291,31 @@
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
-            "latex": "\\parallel",
-            "buttonText": "\\parallel"
+            "latex": "\\parallel"
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
-            "latex": "\\perp",
-            "buttonText": "\\perp"
+            "latex": "\\perp"
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
-            "latex": "\\angle",
-            "buttonText": "\\angle"
+            "latex": "\\angle"
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
-            "latex": "m\\angle",
-            "buttonText": "m\\angle"
+            "latex": "m\\angle"
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
-            "latex": "\\bigtriangleup",
-            "buttonText": "\\bigtriangleup"
+            "latex": "\\bigtriangleup"
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
-            "latex": "▱",
-            "buttonText": "▱"
+            "latex": "▱"
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
-            "latex": "\\bigodot",
-            "buttonText": "\\bigodot"
+            "latex": "\\bigodot"
           }
         ]
       },
@@ -397,23 +339,19 @@
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
-            "latex": "(x,y)",
-            "buttonText": "(x,y)"
+            "latex": "(x,y)"
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
-            "latex": "[x,y]",
-            "buttonText": "[x,y]"
+            "latex": "[x,y]"
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
-            "latex": "(x,y]",
-            "buttonText": "(x,y]"
+            "latex": "(x,y]"
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
-            "latex": "[x,y)",
-            "buttonText": "[x,y)"
+            "latex": "[x,y)"
           }
         ]
       }
@@ -424,69 +362,57 @@
         "buttonViews": [
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
-            "latex": "\\sin",
-            "buttonText": "\\sin"
+            "latex": "\\sin"
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
-            "latex": "\\sec",
-            "buttonText": "\\sec"
+            "latex": "\\sec"
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
             "latex": "\\sin^{-1}",
-            "buttonText": "\\sin^{-1}",
-            "className": "math-button small-exponent"
+            "className": "small-exponent"
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
             "latex": "\\sec^{-1}",
-            "buttonText": "\\sec^{-1}",
-            "className": "math-button small-exponent"
+            "className": "small-exponent"
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
-            "latex": "\\cos",
-            "buttonText": "\\cos"
+            "latex": "\\cos"
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
-            "latex": "\\csc",
-            "buttonText": "\\csc"
+            "latex": "\\csc"
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
             "latex": "\\cos^{-1}",
-            "buttonText": "\\cos^{-1}",
-            "className": "math-button small-exponent"
+            "className": "small-exponent"
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
             "latex": "\\csc^{-1}",
-            "buttonText": "\\csc^{-1}",
-            "className": "math-button small-exponent"
+            "className": "small-exponent"
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
-            "latex": "\\tan",
-            "buttonText": "\\tan"
+            "latex": "\\tan"
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
-            "latex": "\\cot",
-            "buttonText": "\\cot"
+            "latex": "\\cot"
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
             "latex": "\\tan^{-1}",
-            "buttonText": "\\tan^{-1}",
-            "className": "math-button small-exponent"
+            "className": "small-exponent"
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
             "latex": "\\cot^{-1}",
-            "buttonText": "\\cot^{-1}",
-            "className": "math-button small-exponent"
+            "className": "small-exponent"
           }
         ]
       },
@@ -495,43 +421,35 @@
         "buttonViews": [
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
-            "latex": "\\mu",
-            "buttonText": "\\mu"
+            "latex": "\\mu"
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
-            "latex": "\\sigma",
-            "buttonText": "\\sigma"
+            "latex": "\\sigma"
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
-            "latex": "\\overline{x}",
-            "buttonText": "\\overline{x}"
+            "latex": "\\overline{x}"
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
-            "latex": "\\overline{y}",
-            "buttonText": "\\overline{y}"
+            "latex": "\\overline{y}"
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
-            "latex": "x^i",
-            "buttonText": "x^i"
+            "latex": "x^i"
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
-            "latex": "x_i",
-            "buttonText": "x_i"
+            "latex": "x_i"
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
-            "latex": "x!",
-            "buttonText": "x!"
+            "latex": "x!"
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
-            "latex": "\\Sigma",
-            "buttonText": "\\Sigma"
+            "latex": "\\Sigma"
           }
         ]
       },
@@ -540,33 +458,27 @@
         "buttonViews": [
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
-            "latex": "\\alpha",
-            "buttonText": "\\alpha"
+            "latex": "\\alpha"
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
-            "latex": "\\beta",
-            "buttonText": "\\beta"
+            "latex": "\\beta"
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
-            "latex": "\\gamma",
-            "buttonText": "\\gamma"
+            "latex": "\\gamma"
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
-            "latex": "\\delta",
-            "buttonText": "\\delta"
+            "latex": "\\delta"
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
-            "latex": "\\theta",
-            "buttonText": "\\theta"
+            "latex": "\\theta"
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
-            "latex": "\\pi",
-            "buttonText": "\\pi"
+            "latex": "\\pi"
           }
         ]
       },
@@ -575,25 +487,21 @@
         "buttonViews": [
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
-            "latex": "\\int",
-            "buttonText": "\\int"
+            "latex": "\\int"
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
             "latex": "\\int_{a}^{b}",
-            "buttonText": "\\int_{a}^{b}",
-            "className": "math-button integral tall"
+            "className": "integral tall"
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
-            "latex": "dx",
-            "buttonText": "dx"
+            "latex": "dx"
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
             "latex": "\\frac{d}{dx}",
-            "buttonText": "\\frac{d}{dx}",
-            "className": "math-button tall"
+            "className": "tall"
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
@@ -607,8 +515,7 @@
           },
           {
             "klass": "EquationEditor.Buttons.WriteButtonView",
-            "latex": "\\infty",
-            "buttonText": "\\infty"
+            "latex": "\\infty"
           }
         ]
       }
