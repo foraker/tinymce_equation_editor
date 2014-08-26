@@ -28,7 +28,7 @@ The files can be put wherever they make sense in your project with some minor mo
 
 Here's an example initialization of TinyMCE. Note that you need to load equation editor plugin and include the CSS and toolbar button:
 
-Anywhere that you display text that could equations, you will need to include the Mathquill JS and CSS.
+Anywhere that you display text that could include equations, you will need to include the Mathquill JS and CSS.
 
 ```javascript
 tinymce.PluginManager.load('equationeditor', '/path/to/plugin.min.js');
