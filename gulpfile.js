@@ -1,7 +1,8 @@
 var gulp = require('gulp');
 var coffee = require('gulp-coffee');
 var concat = require('gulp-concat');
-var uglify = require('gulp-uglify')
+var uglify = require('gulp-uglify');
+var zip    = require('gulp-zip');
 
 gulp.task('build:equation_editor', function() {
   gulp.src(['./src/equation_editor/events.coffee',
@@ -27,4 +28,17 @@ gulp.task('build:plugin', function() {
     .pipe(gulp.dest('./build/js/'))
 });
 
-gulp.task('build', ['build:equation_editor', 'build:plugin']);
+gulp.task('build:zip', function() {
+  gulp.src(['./build/fonts/*',
+            './build/js/equation_editor.js',
+            './build/js/mathquill.min.js',
+            './build/js/plugin.min.js',
+            './build/equation_editor.css',
+            './build/equation_editor.html',
+            './build/mathquill.css',
+    ])
+    .pipe(zip('tinymce_equation_editor.zip'))
+    .pipe(gulp.dest('./build/'))
+})
+
+gulp.task('build', ['build:equation_editor', 'build:plugin', 'build:zip']);
