@@ -9,7 +9,7 @@ class EquationEditor.EquationEditorView extends EquationEditor.View
     EquationEditor.Events.on('latex:write', @handleWriteButton, @)
 
   render: ->
-    $.getJSON('/src/equation_editor/config.json').done (config) =>
+    $.getJSON('config.json').done (config) =>
       @config = config
       @addButtonBar()
       @addButtonGroups()

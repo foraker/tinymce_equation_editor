@@ -28,6 +28,11 @@ gulp.task('build:plugin', function() {
     .pipe(gulp.dest('./build/js/'))
 });
 
+gulp.task('build:copy_config', function() {
+  gulp.src('./src/equation_editor/config.json')
+    .pipe(gulp.dest('./build/'))
+});
+
 gulp.task('build:zip', function() {
   gulp.src(['./build/fonts/*',
             './build/js/equation_editor.js',
@@ -36,9 +41,10 @@ gulp.task('build:zip', function() {
             './build/equation_editor.css',
             './build/equation_editor.html',
             './build/mathquill.css',
+            './src/equation_editor/config.json'
     ])
     .pipe(zip('tinymce_equation_editor.zip'))
     .pipe(gulp.dest('./build/'))
-})
+});
 
-gulp.task('build', ['build:equation_editor', 'build:plugin', 'build:zip']);
+gulp.task('build', ['build:equation_editor', 'build:plugin', 'build:copy_config', 'build:zip']);
