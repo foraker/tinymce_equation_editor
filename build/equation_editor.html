@@ -2,21 +2,12 @@
 <html>
 <head>
   <script type="text/javascript" src="//code.jquery.com/jquery-2.1.1.js"></script>
-  <!-- Update with your path to Mathquill -->
-  <script type="text/javascript" src="mathquill.js"></script>
+  <!-- Update with your paths to everything -->
+  <script type="text/javascript" src="/build/mathquill.js"></script>
+  <script type="text/javascript" src="/build/js/equation_editor.js"></script>
 
-  <script type="text/javascript" src="http://coffeescript.org/extras/coffee-script.js"></script>
-  <script type="text/coffeescript" src="../src/equation_editor/events.coffee"></script>
-  <script type="text/coffeescript" src="../src/equation_editor/view.coffee"></script>
-  <script type="text/coffeescript" src="../src/equation_editor/collapsible_view.coffee"></script>
-  <script type="text/coffeescript" src="../src/equation_editor/button_views.coffee"></script>
-  <script type="text/coffeescript" src="../src/equation_editor/button_group_view.coffee"></script>
-  <script type="text/coffeescript" src="../src/equation_editor/button_view_factory.coffee"></script>
-  <script type="text/coffeescript" src="../src/equation_editor/button_group_view_factory.coffee"></script>
-  <script type="text/coffeescript" src="../src/equation_editor/equation_editor_view.coffee"></script>
-
-  <link rel="stylesheet" type="text/css" href="mathquill.css">
-  <link rel="stylesheet" type="text/css" href="equation_editor.css">
+  <link rel="stylesheet" type="text/css" href="/build/mathquill.css">
+  <link rel="stylesheet" type="text/css" href="/build/equation_editor.css">
 </head>
 <body class="equation-editor">
   <div class="cols">
@@ -29,19 +20,17 @@
     </div>
   </div>
   <script type="text/javascript">
-    setTimeout(function() { // REMOVE AFTER BUILDING JAVASCRIPT
-      var params = top.tinymce.activeEditor.windowManager.getParams();
-      var existingLatex = params['existing_latex'];
+    var params = top.tinymce.activeEditor.windowManager.getParams();
+    var existingLatex = params['existing_latex'];
 
-      var equationEditor = new EquationEditor.EquationEditorView({
-        $el: $('.equation-editor'),
-        existingLatex: existingLatex,
-        restrictions: top.tinymce.equationEditorRestrictions
-      }).render();
+    var equationEditor = new EquationEditor.EquationEditorView({
+      $el: $('.equation-editor'),
+      existingLatex: existingLatex,
+      restrictions: top.tinymce.equationEditorRestrictions
+    }).render();
 
-      params['latexInput'] = equationEditor.input();
-      top.tinymce.activeEditor.windowManager.setParams(params);
-    }, 1000);
+    params['latexInput'] = equationEditor.input();
+    top.tinymce.activeEditor.windowManager.setParams(params);
   </script>
 </body>
 </html>

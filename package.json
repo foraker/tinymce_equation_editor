@@ -1,0 +1,22 @@
+{
+  "name": "tinymce_equation_editor",
+  "version": "1.0.0",
+  "author": "Foraker Labs",
+  "description": "A TinyMCE plugin for editing equations using Mathquill",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/foraker/tinymce_equation_editor/raw/master/LICENSE"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/foraker/tinymce_equation_editor.git"
+  },
+  "devDependencies": {
+    "gulp": ">=3.8.7",
+    "gulp-coffee": ">=2.1.2",
+    "gulp-concat": ">=2.3.4",
+    "gulp-uglify": ">=0.3.1"
+  }
+}
