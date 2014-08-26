@@ -31,6 +31,7 @@
   float: left;
   margin-right: 3px;
   text-decoration: none;
+  text-align: center;
 }
 
 .equation-editor .collapsible.button-group .collapsible-box-toggle:before {
