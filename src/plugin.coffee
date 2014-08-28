@@ -1,6 +1,5 @@
 tinymce.create('tinymce.plugins.EquationEditorPlugin', {
   init: (editor, url) ->
-    latexImgRendererUrl = 'http://chart.apis.google.com/chart?cht=tx&chl='
     editing = null
 
     editor.addCommand 'mceMathquill', (existing_latex) ->
