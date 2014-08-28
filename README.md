@@ -64,11 +64,11 @@ You'll need [npm](https://www.npmjs.org/)
 
 ### Pull Requests
 
-Please open pull requests! We'd love to see a configuration management tool for `config.json` (choose from set up pre-made buttons? make new buttons?) and support for installation via Bower (etc). Perhaps plug ins for editors other than TinyMCE?
+Please open pull requests! We'd love to see a configuration management tool for `config.json` (choose from set up pre-made buttons? make new buttons?) and support for installation via Bower (etc). Perhaps plugins for editors other than TinyMCE?
 
 ## Under the Covers
 
-Everything is written in CoffeeScript with the relevant files living in `src`. The `dev_example` folder contains `example.html` that includes uses the CoffeeScript files directly to make debugging things easier.
+Everything is written in CoffeeScript with the relevant files living in `src`. The `dev_example` folder contains `example.html` that uses the CoffeeScript files directly to make debugging things easier.
 
 ### events.coffee
 
@@ -76,7 +76,7 @@ This implements a basic event pipeline for passing messages between classes.
 
 ### view.coffee
 
-This is the base class for all the view classes. It implements a `$` method to allow easy scoping to the current element. The constructor accepts `$el` if passing a jQuery-ified element or `el` and then jQuery-ifies it.
+This is the base class for all the view classes. It implements a `$` method to allow easy scoping to the current element. The constructor accepts `$el` for passing a jQuery-ified element or `el` which is then jQuery-ified.
 
 ### config.json
 
@@ -108,7 +108,7 @@ A button configuration accepts four keys:
 
 A `WriteButtonView` is for writing arbitrary LaTeX and a `CommandButtonView` executes a LaTeX command. For example, executing `\sqrt` as a command will squareroot the current selection, if applicable.
 
-The button groups are disableable by setting `top.tinymce.equationEditorRestrictions`. For example, if you don't want to confuse elementary-aged kids with calculus buttons, you can set `top.tinymce.equationEditorRestrictions` to `{ disallow_advanced: true }`
+The button groups can be disabled by setting `top.tinymce.equationEditorRestrictions`. For example, if you don't want to confuse elementary-aged kids with calculus buttons, you can set `top.tinymce.equationEditorRestrictions` to `{ disallow_advanced: true }`
 
 By default, all button groups are enabled.
 
