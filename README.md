@@ -2,7 +2,7 @@
 
 ## What is this?
 
-Equation Editor plugin for [TinyMCE](http://www.tinymce.com/) that uses [Mathquill](https://github.com/mathquill/mathquill).
+Equation Editor plugin for [TinyMCE](http://www.tinymce.com/) that uses [Mathquill](https://github.com/mathquill/mathquill). It requires [Foraker's fork of Mathquill](https://github.com/foraker/mathquill).
 
 ![Screenshot](screenshot.png)
 
