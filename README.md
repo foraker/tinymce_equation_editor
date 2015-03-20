@@ -145,3 +145,11 @@ This is the file opened in the iframe by TinyMCE. It sets up the basic DOM struc
 ### plugin.coffee
 
 This is the TinyMCE-specific plugin that defines how the plugin behaves. We open `equation_editor.html` with the `mceMathquill` TinyMCE command. It also handles rendering Mathquill-ified LaTeX within TinyMCE and listening for clicks to edit inserted equations.
+
+## About Foraker Labs
+
+<img src="http://assets.foraker.com/foraker_logo.png" width="400" height="62">
+
+This project is maintained by Foraker Labs. The names and logos of Foraker Labs are fully owned and copyright Foraker Design, LLC.
+
+Foraker Labs is a Boulder-based Ruby on Rails and iOS development shop. Please reach out if we can [help build your product](http://www.foraker.com).
