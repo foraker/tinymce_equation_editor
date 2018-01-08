@@ -3,17 +3,16 @@
 <head>
   <title>TinyMCE Equation Editor Example</title>
   <script type="text/javascript" src="//code.jquery.com/jquery-2.1.1.js"></script>
-  <script type="text/javascript" src="../build/js/mathquill.min.js"></script>
+  <script type="text/javascript" src="{PATH_TO_equationeditor_PLUGIN_FOLDER}/mathquill.min.js"></script>
 
-  <script type="text/javascript" src="tinymce.min.js"></script>
+  <script type="text/javascript" src="{PATH_TO_TINYMCE}/tinymce.min.js"></script>
 
   <script type="text/javascript">
-    tinymce.PluginManager.load('equationeditor', '/build/js/plugin.min.js');
 
     tinymce.init({
       selector: 'textarea',
-      plugins: 'equationeditor',
-      content_css: '../build/mathquill.css',
+      plugins: 'equationeditor', // rename plugin folder to equationeditor
+      content_css: '{PATH_TO_equationeditor_PLUGIN_FOLDER}/mathquill.css',
       toolbar: [
         'bold italic underline | bullist numlist | subscript superscript | alignleft aligncenter alignright | equationeditor'
       ],
