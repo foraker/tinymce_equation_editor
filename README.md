@@ -10,7 +10,7 @@ Equation Editor plugin for [TinyMCE](http://www.tinymce.com/) that uses [Mathqui
 
 Refer to [example/example.html](example/example.html) for an example. Note that if you have the repository cloned locally and want to see it in action, you'll need to have it running in a server (i.e. `cd tinymce_equation_editor`; `python -m SimpleHTTPServer` and then going to http://localhost:8000/example/example.html)
 
-Download [tinymce\_equation\_editor.zip](build/tinymce_equation_editor.zip).
+Download [tinymce\_equation\_editor.zip](build/tinymce_equation_editor.zip) and rename to `equationeditor`.
 
 You'll get the following files:
 - equation_editor.css
@@ -31,7 +31,6 @@ Here's an example initialization of TinyMCE. Note that you need to load equation
 Anywhere that you display text that could include equations, you will need to include the Mathquill JS and CSS.
 
 ```javascript
-tinymce.PluginManager.load('equationeditor', '/path/to/plugin.min.js');
 
 tinymce.init({
   selector: 'textarea',
