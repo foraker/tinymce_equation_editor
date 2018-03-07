@@ -3,21 +3,21 @@
   "version": "1.0.0",
   "author": "Foraker Labs",
   "description": "A TinyMCE plugin for editing equations using Mathquill",
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "http://github.com/foraker/tinymce_equation_editor/raw/master/LICENSE"
-    }
-  ],
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/foraker/tinymce_equation_editor.git"
   },
   "devDependencies": {
-    "gulp": ">=3.8.7",
-    "gulp-coffee": ">=2.1.2",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.1",
     "gulp-concat": ">=2.3.4",
+    "gulp-copy": "^1.1.0",
     "gulp-uglify": ">=0.3.1",
-    "gulp-zip": ">=2.0.1"
+    "gulp-zip": ">=2.0.1",
+    "mathquill": "^0.10.1-a",
+    "tinymce": "^4.7.9"
   }
 }
