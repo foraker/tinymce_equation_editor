@@ -55,26 +55,35 @@ Push that fork button, and then...
 
 ### Local Setup
 
-You'll need [npm](https://www.npmjs.org/)
+You'll need [npm](https://www.npmjs.org/) and [mathquill](https://github.com/mathquill/mathquill)
 
-`git clone git@github.com:your_github_username/tinymce_equation_editor.git`
+```
+git clone git@github.com:your_github_username/tinymce_equation_editor.git
 
-`npm install`
+npm install
 
+git clone https://github.com/mathquill/mathquill.git
+
+cd mathquill
+
+npm install
+
+make
+
+cd ..
+
+node_modules/gulp/bin/gulp.js build
+```
 
 ### Pull Requests
 
 Please open pull requests! We'd love to see a configuration management tool for `config.json` (choose from set up pre-made buttons? make new buttons?) and support for installation via Bower (etc). Perhaps plugins for editors other than TinyMCE?
 
-## Under the Covers
-
-Everything is written in CoffeeScript with the relevant files living in `src`. The `dev_example` folder contains `example.html` that uses the CoffeeScript files directly to make debugging things easier.
-
-### events.coffee
+### events.js
 
 This implements a basic event pipeline for passing messages between classes.
 
-### view.coffee
+### view.js
 
 This is the base class for all the view classes. It implements a `$` method to allow easy scoping to the current element. The constructor accepts `$el` for passing a jQuery-ified element or `el` which is then jQuery-ified.
 
@@ -112,27 +121,27 @@ The button groups can be disabled by setting `top.tinymce.equationEditorRestrict
 
 By default, all button groups are enabled.
 
-### button_views.coffee
+### button_views.js
 
 This contains the rendering logic for a single button. When it's clicked, we fire an event on the event pipeline, `EquationEditor.Events` which we will listen for from `EquationEditor.EquationEditorView`.
 
-### button_group_view.coffee
+### button_group_view.js
 
 Handles rendering the group name and the contained button views. Also makes itself collapsible using `EquationEditor.CollapsibleView`
 
-### collapsible_view.coffee
+### collapsible_view.js
 
 A utility class used for handling the hiding/showing of button groups.
 
-### button_view_factory.coffee
+### button_view_factory.js
 
 Translates button configurations from `config.json` into button instances.
 
-### button_group_view_factory.coffee
+### button_group_view_factory.js
 
 Translates button group view configurations from `config.json` into button group view instances. Utilizes `EquationEditor.ButtonViewFactory` to translate the child button views.
 
-### equation_editor_view.coffee
+### equation_editor_view.js
 
 `EquationEditor.EquationEditorView` ties everything together.
 
@@ -142,7 +151,7 @@ It listens for `latex:command` and `latex:write` events fired from the buttons. 
 
 This is the file opened in the iframe by TinyMCE. It sets up the basic DOM structure which is filled in by the JavaScript. It handles the communication between TinyMCE regarding existing LaTeX (when editing an existing equation) and restrictions. It instantiates the `EquationEditor.EquationEditorView` and gives TinyMCE a reference to it, allowing the plugin to get the contents.
 
-### plugin.coffee
+### plugin.js
 
 This is the TinyMCE-specific plugin that defines how the plugin behaves. We open `equation_editor.html` with the `mceMathquill` TinyMCE command. It also handles rendering Mathquill-ified LaTeX within TinyMCE and listening for clicks to edit inserted equations.
 

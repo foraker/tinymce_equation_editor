@@ -5,22 +5,31 @@
   <script type="text/javascript" src="//code.jquery.com/jquery-2.1.1.js"></script>
   <script type="text/javascript" src="../build/js/mathquill.min.js"></script>
 
-  <script type="text/javascript" src="tinymce.min.js"></script>
+  <script type="text/javascript" src="/node_modules/tinymce/tinymce.js"></script>
 
   <script type="text/javascript">
     tinymce.PluginManager.load('equationeditor', '/build/js/plugin.min.js');
 
     tinymce.init({
       selector: 'textarea',
-      plugins: 'equationeditor',
+      plugins: 'equationeditor code',
+      extended_valid_elements: '+math',
       content_css: '../build/mathquill.css',
       toolbar: [
-        'bold italic underline | bullist numlist | subscript superscript | alignleft aligncenter alignright | equationeditor'
+        'bold italic underline | bullist numlist | subscript superscript | alignleft aligncenter alignright | equationeditor code'
       ],
     });
   </script>
 </head>
 <body>
-  <textarea></textarea>
+  <textarea rows="20">
+<p>Enter your equation here by clicking the f(x) button above, click on the equation to edit with the same interface.</p>
+<p>$$4x^3+2x^2+9x-10=y$$</p>
+<p>To enter in latex directly use the the <strong>$$</strong> tags. To render view the source or save the document and reload. For example <strong>$$</strong>f(x) = \int_{-\infty}^\infty\hat f(\xi)\,e^{2 \pi i \xi x}\,d\xi<strong>$$</strong></p>
+<p>$$f\left(x\right)\ =\int_{_{-\infty}}^{\infty}\hat{f\left(\xi\right)e^{2\pi i\xi x}\ \ d\xi}$$</p>
+<p>To use double dollar signs in the content and not have them render as an equation make them bold, italic or another font. <b>$$</b> Then they will be ignored</p>
+
+
+</textarea>
 </body>
 </html>
